@@ -9,7 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23141416'/><text x='32' y='42' font-family='Arial' font-weight='700' font-size='26' fill='%23e6c86e' text-anchor='middle'>MV</text></svg>">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
 <style>
   :root{--navy:#141416;--silver:#c9ccd2;--accent:#c9a227;--accent-2:#e6c86e}
   *{box-sizing:border-box;margin:0;padding:0}
@@ -18,6 +19,9 @@
   a{color:inherit;text-decoration:none}
   header{padding:20px}
   .logo{max-width:1120px;margin:0 auto;display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.1rem}
+  .logo .logo-badge{display:flex;align-items:center;height:40px;padding:5px 9px;background:#fff;border-radius:10px;box-shadow:0 0 0 1px rgba(230,200,110,.45)}
+  .logo .logo-badge img{height:100%;width:auto;display:block}
+  .logo-name{font-weight:800}
   .logo span{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:var(--accent-2);color:var(--navy);font-size:.9rem}
   main{flex:1;display:grid;place-items:center;padding:24px 16px 56px}
   .card{width:100%;max-width:620px;text-align:center;background:rgba(255,255,255,.05);border:1px solid rgba(230,200,110,.3);border-radius:24px;padding:48px 32px;box-shadow:0 30px 60px rgba(0,0,0,.3);animation:rise .6s ease both}
@@ -43,7 +47,7 @@
 </style>
 </head>
 <body>
-<header><a href="/" class="logo"><span>MV</span>Marc Vicencio</a></header>
+<header><a href="/" class="logo" aria-label="Marc Vicencio home"><i class="logo-badge"><img src="/logo-mark.png" alt="MV logo" width="480" height="228"></i><b class="logo-name">Marc Vicencio</b></a></header>
 
 <main>
   <div class="card">
